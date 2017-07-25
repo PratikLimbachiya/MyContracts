@@ -7,11 +7,11 @@ contract mySecond {
   uint public data;
   uint public datanew;
 
-  function mySecond() {
+  function mySecond(uint datahi) {
       message = 2121;
       data = message * 50 / 100;
       owner = msg.sender;
-      datanew = message * 50 / 100;
+      datanew = datahi;
   }
 
   function myCal() constant returns (uint) {
